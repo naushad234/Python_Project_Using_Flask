@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Grade Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .link-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Student Marks</h2>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Student Name" required>
+            <input type="number" name="sub1" placeholder="Subject 1" min="0" max="100" required>
+            <input type="number" name="sub2" placeholder="Subject 2" min="0" max="100" required>
+            <input type="number" name="sub3" placeholder="Subject 3" min="0" max="100" required>
+            <input type="number" name="sub4" placeholder="Subject 4" min="0" max="100" required>
+            <input type="number" name="sub5" placeholder="Subject 5" min="0" max="100" required>
+            <button type="submit">Calculate & Save</button>
+        </form>
+        <div class="link-container">
+            <a href="/view">View All Records</a>
+        </div>
+    </div>
+</body>
+</html>
